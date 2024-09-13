@@ -1,0 +1,84 @@
+enable=true
+
+[[routes]]
+rules=[
+"geosite:netflix",
+"geosite:bahamut",
+"geosite:hulu",
+"geosite:hbo",
+"geosite:disney",
+"geosite:bbc",
+"geosite:4chan",
+"geosite:fox",
+"geosite:abema",
+"geosite:bilibili",
+"geosite:viu",
+"geosite:mytvsuper",
+"geosite:niconico",
+"geosite:dazn",
+"geosite:tvb",
+"geosite:hotstar",
+"geosite:primevideo",
+"geosite:iqiyi",
+"geosite:spotify",
+"geosite:twitter",
+"geosite:dmm"
+]
+
+[[routes.Outs]]
+listen=""
+type="ss"
+server="us_unlock.math-edu.cc"
+port=33333
+password="ZGRmYmUxZWU5MjI1ODhhZjM2NGUyZmNkZjY5MzkxMTE=:YWMxOGNiZDQtNWE2Ny00MTljLWI5MWItNjYwZDU5OGU="
+cipher="2022-blake3-aes-256-gcm"
+
+[[routes]]
+rules=[
+    "geosite:openai",
+    "domain:chatgpt.com",
+    "domain:openai.com",
+    "domain:cdn.auth0.com",
+    "domain:azureedge.net",
+    "domain:sentry.io",
+    "domain:azurefd.net",
+    "domain:intercomcdn.com",
+    "domain:intercom.io",
+    "domain:google-analytics.com",
+    "domain:identrust.com",
+    "domain:challenges.cloudflare.com",
+    "domain:ai.com",
+    "domain:oaistatic.com",
+    "domain:oaiusercontent.com",
+    "domain:chatgpt.com",
+    "domain:cdn.oaistatic.com",
+    "domain:auth0.openai.com",
+    "domain:files.oaiusercontent.com",
+    "domain:cdn.oaistatic.com",
+    "geosite:google-scholar",
+    "domain:android.chat.openai.com",
+    "domain:ios.chat.openai.com",
+    "domain:chat.openai.com",
+    "domain:api.trongrid.io",
+    "domain:www.bing.com",
+    "domain:bing.com",
+    "domain:sydney.bing.com",
+    "domain:sydney.vcanbb.chat",
+    "domain:bingai.nothingnessvoid.tech"
+]
+
+[[routes.outs]] #GPT路由 出口
+listen=""
+type="ss"
+server="gpt_unlock.math-edu.cc"
+port=33333
+password="ZGRmYmUxZWU5MjI1ODhhZjM2NGUyZmNkZjY5MzkxMTE=:YWMxOGNiZDQtNWE2Ny00MTljLWI5MWItNjYwZDU5OGU="
+cipher="2022-blake3-aes-256-gcm"
+
+[[routes]]
+rules=["*"]
+
+[[routes.Outs]]
+listen=""
+type="direct"
+
